@@ -1,2 +1,0 @@
-# welo
-# welo-web-app
