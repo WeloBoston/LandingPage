@@ -97,6 +97,9 @@ body {
 #subscribe-input{
     color: white;
 }
+#subscribe-input::placeholder:focus{
+    text-align: left;
+}
 
 @media (min-width:1200px) {
     .container {
@@ -176,7 +179,7 @@ h4 {
 }
 
 h5 {
-    font-size: 18px;
+    font-size: 23px;
     color: #2b323f;
     font-weight: 600;
 }
@@ -1204,6 +1207,8 @@ header {
     -webkit-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
     width: 100%;
+    position: relative;
+    top: -4px;
 }
 
 /*.navbar.affix .navbar-brand>img {
@@ -1211,16 +1216,18 @@ header {
 }*/
 
 .navbar-nav li a {
-    color: #fff;
     font-size: 16px;
     font-weight: 400;
     padding: 12px;
     border: 0 solid transparent;
     border-radius: 16px;
-    box-shadow: 0 1px 4px 0 #51d898;
+    background-color: white;
+    box-shadow: 0 1px 4px 0 lightgrey;
     margin-right: 15px;
     margin-top: 5px;
-  }
+    color: gray;
+    opacity: .7;
+}
 
 .nav>li>a:focus,
 .nav>li>a:hover,
@@ -1257,7 +1264,7 @@ header {
 }
 /* about index  */
 .home-style-2-1 {
-  background: rgba(0, 0, 0, 0) url("img/about.jpg") no-repeat scroll center center / cover;
+  background: rgba(0, 0, 0, 0) url("img/LoveHands.jpg") no-repeat scroll center center / cover;
   padding-top: 90px;
 }
 .home-style-2 .navbar.affix {
@@ -1268,13 +1275,15 @@ header {
 
 .home-style-2 .navbar.affix li a {
     color: #fff;
+    background-color: #51d998;
+    opacity: 1;
 }
 
 .home-style-2 .nav>li>a:focus,
 .home-style-2 .nav>li>a:hover,
 .home-style-2 .nav>.active>a {
-    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
-    /* color: #ee0f6f; */
+    background: #ADADAD;
+    color: white;
 }
 
 
@@ -1312,7 +1321,7 @@ Modal
 .modal-body .subscription-form input {
     margin-bottom: 70px;
     position: relative;
-    left: 34%;
+    left: 19%;
     border: solid #51d998;
     border-radius: 15px;
 }
@@ -1326,8 +1335,8 @@ Modal
     font-size: 18px;
     height: 50px;
     padding: 0 30px;
-    position: relative;
-    left: 6%;
+    position: absolute;
+    left: 36%;
     top: 60px;
 }
 
@@ -1654,7 +1663,8 @@ Modal
 .about-app span {
   color: #51d998;
   margin-left: 1%;
-  font-size: 16px;
+  font-size: 16px; 
+  cursor: pointer;
 }
 
 /* Team boxes about   */
@@ -2710,9 +2720,23 @@ Modal
     font-size: 18px;
     height: 50px;
     width: 50%;
-    padding: 1px 50px 1px 50px;
+    padding: 1px 40px;
     margin-left: 75px;
     text-align: start;
+}
+
+.subscribe-box .form-control:focus{
+    background: none repeat scroll 0 0;
+    border: 3px solid white;
+    border-radius: 15px;
+    box-shadow: none;
+    color: #4c5462;
+    font-size: 18px;
+    height: 50px;
+    width: 50%;
+    padding: 1px 40px;
+    margin-left: 75px;
+    text-align: left;
 }
 
 .subscribe-box-2 .form-control-2 {
@@ -2728,6 +2752,25 @@ Modal
     margin-left: 360px;
     display: block;
     margin-top: 60px;
+    text-align: center;
+}
+
+.subscribe-box-2 .form-control-2:focus {
+    background: none repeat scroll 0 0;
+    border: 3px solid #333;
+    border-radius: 15px;
+    box-shadow: none;
+    color: #4c5462;
+    font-size: 18px;
+    height: 55px;
+    width: 380px;
+    padding: 1px 20px;
+    margin-left: 360px;
+    display: block;
+    margin-top: 60px;
+    margin-left: auto;
+    text-align: left;
+    outline: none;
 }
 
 .subscribe-box .form-control::-moz-placeholder {
@@ -4189,10 +4232,10 @@ Modal
 36. Last Edits (by Rob Arsenault)
 ------------------------------------------*/
 #leadership {
-    padding-top: 90px;
+    /* padding-top: 90px; */
     text-align: center;
     font-size: 48px;
-    color: #51d898;
+    color: black;
 }
 
 .w3-opacity
@@ -4214,9 +4257,31 @@ Modal
 
 #aboutUs
 {
-    background-image: url(img/home-background.png);
+    
     background-size: cover;
     background-repeat: no-repeat;
-    padding-top: 270px;
-    padding-bottom: 270px;
+}
+
+#bottomText
+{
+    position:relative;
+    top: 15px;
+}
+
+#subscribe-input2
+{
+    padding: 0px 30px;
+    text-align: center;
+    height: 33px;
+}
+
+#aboutUsText
+{
+    font-size: 20px;
+}
+
+#about
+{
+    padding-left: 19%;
+    padding-right: 19%;
 }
