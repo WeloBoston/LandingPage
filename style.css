@@ -97,6 +97,13 @@ body {
 #subscribe-input{
     color: white;
 }
+
+#subscribe-input::-moz-placeholder{
+    color: white;
+}
+#subscribe-input::-ms-input-placeholder{
+    color: white;
+}
 #subscribe-input::placeholder:focus{
     text-align: left;
 }
@@ -1244,6 +1251,7 @@ header {
 #slider-area.home-style-2 {
     background: rgba(0, 0, 0, 0) url("img/background-img.png") no-repeat scroll center center / cover;
     padding-top: 90px;
+    padding-bottom: 262px;
 }
 
 @media (min-width: 350px) and (max-width: 550px){
@@ -1266,9 +1274,10 @@ header {
 .home-style-2-1 {
   background: rgba(0, 0, 0, 0) url("img/LoveHands.jpg") no-repeat scroll center center / cover;
   padding-top: 90px;
+  padding-bottom: 381px;
 }
 .home-style-2 .navbar.affix {
-    background: #ffffff none repeat scroll 0 0;
+    background: #fcfcfc repeat scroll 0 0;
     /*height: 55px;*/
     padding: 1.1%;
 }
@@ -1321,7 +1330,7 @@ Modal
 .modal-body .subscription-form input {
     margin-bottom: 70px;
     position: relative;
-    left: 19%;
+    left: 100px;
     border: solid #51d998;
     border-radius: 15px;
 }
@@ -1336,7 +1345,7 @@ Modal
     height: 50px;
     padding: 0 30px;
     position: absolute;
-    left: 36%;
+    left: 33%;
     top: 60px;
 }
 
@@ -2172,9 +2181,8 @@ Modal
     z-index: 1;
 }
 
-.social a:after {
-    background: rgba(0, 0, 0, 0) -webkit-linear-gradient(left, #00c9fd 0%, #81ee8e 100%) repeat scroll 0 0;
-    background: rgba(0, 0, 0, 0) linear-gradient(to right, #00c9fd 0%, #81ee8e 100%) repeat scroll 0 0;
+.social #instagram::after{
+    background:rgba(0, 0, 0, 0) linear-gradient(to top, #fca600 0%, rgb(233, 48, 48) 50%, #8400ec 100%) repeat scroll 0 0;
     content: "";
     height: 100%;
     left: 0;
@@ -2188,7 +2196,47 @@ Modal
     z-index: -1;
 }
 
-.social a:hover:after {
+.social #instagram:hover:after {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+
+.social #twitter::after{
+    background:rgba(0, 0, 0, 0) linear-gradient(to top, #3e9bd8 0, #6fcaf7 100%) repeat scroll 0 0;
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    position: absolute;
+    top: 0;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    width: 100%;
+    z-index: -1;
+}
+
+.social #twitter:hover:after {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+
+.social #facebook::after{
+    background:rgba(0, 0, 0, 0) linear-gradient(to bottom, #5989d6 0%, #2e5a9b 100%) repeat scroll 0 0;
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    position: absolute;
+    top: 0;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    width: 100%;
+    z-index: -1;
+}
+
+.social #facebook:hover:after {
     opacity: 1;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 }
@@ -2753,6 +2801,10 @@ Modal
     display: block;
     margin-top: 60px;
     text-align: center;
+}
+
+.subscribe-box-2 .form-control-2::-moz-placeholder {
+    color: black;
 }
 
 .subscribe-box-2 .form-control-2:focus {
@@ -4284,4 +4336,9 @@ Modal
 {
     padding-left: 19%;
     padding-right: 19%;
+}
+
+#WeloBanner
+{
+    width: 315px;
 }
