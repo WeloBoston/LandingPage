@@ -1251,7 +1251,7 @@ header {
 #slider-area.home-style-2 {
     background: rgba(0, 0, 0, 0) url("img/background-img.png") no-repeat scroll center center / cover;
     padding-top: 90px;
-    padding-bottom: 262px;
+    padding-bottom: 265px;
 }
 
 @media (min-width: 350px) and (max-width: 550px){
@@ -1330,7 +1330,7 @@ Modal
 .modal-body .subscription-form input {
     margin-bottom: 70px;
     position: relative;
-    left: 100px;
+    left: 75px;
     border: solid #51d998;
     border-radius: 15px;
 }
